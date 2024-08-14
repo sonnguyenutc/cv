@@ -1,0 +1,105 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #333;
+  --primary-color: #ee4d2d;
+  --border-color: #dbdbdb;
+  --star-gold-color: #ffce3e;
+  --navbar-height: 34px;
+  --header-height: 119px;
+  --header-with-search-height: calc(
+    var(--header-height)-var(var(--navbar-height))
+  );
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Inclusive Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+}
+/* Tránh vỡ trang giữa các section quan trọng */
+section {
+  /* page-break-inside: avoid; */
+}
+
+/* Bắt đầu section mới trên trang mới */
+h1, h2, h3 {
+  page-break-before: always;
+}
+
+p, span, li {
+  /* @apply leading-4; */
+  font-size: 16px;
+  line-height: 24px;
+}
+
+li {
+  list-style: inside;
+  margin-left: 30px;
+}
+
+.container-page {
+  margin: 50px
+}
+
+.title-1 {
+  /* @apply font-bold leading-8; */
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.title-2 {
+  /* @apply font-semibold uppercase leading-6; */
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 28px;
+}
+.title-4 {
+  /* @apply font-medium leading-4; */
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.title-5 {
+  /* @apply font-medium leading-4; */
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.line {
+  /* @apply w-full h-1 bg-black my-5; */
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin: 6px 0 10px;
+}
+.between-x {
+  /* @apply flex justify-between; */
+  display: flex;
+  justify-content: space-between;
+}
+.text-des {
+  /* @apply leading-4; */
+  font-size: 16px;
+  color: #272b2b;
+  line-height: 20px;
+}
+.dot {
+  width: 4px;
+  height: 4px;
+  margin: 0 10px;
+  background-color: black;
+  border-radius: 50%;
+}
